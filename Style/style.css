@@ -1,6 +1,8 @@
 
 :root {
     --up-move: -350px; 
+    --background: #0f0f1a;
+    --main-text: #ffaf7a;
 }
 
 @media (min-width: 1030px) {
@@ -95,20 +97,23 @@ html, body {
     overflow-x: hidden;
 }
 body {
-    background-color: #0f0f1d;
+    background-color: var(--background);
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    color: #ffaf7a;
+    color: var(--main-text);
 }
 body::selection {
     color: #000000;
     background-color: #82ffd599;
 }
 a {
-    color:lightblue;
-    font-style: italic;
+    color: var(--main-text);
+    text-decoration: none;
+}
+#open-nav-main:hover {
+    backdrop-filter: blur(20px);
 }
 .sidebar {
     position: fixed;
@@ -119,17 +124,18 @@ a {
     z-index: 999;
     background-color: #2b264692;
     backdrop-filter: blur(10px);
-    color: #ffaf7a;
+    color: var(--main-text);
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-items: flex-start;
+    gap: 1.5rem;
     padding-left: 5vw;
     padding-top: 5vw;
 }
 #nav-main {
     font-weight: normal;
-    font-size: x-large;
+    font-size: 18px;
 }
 .sidebar li {
     list-style: none;
@@ -149,7 +155,7 @@ header {
     background-color: #2f2f3d;
     width: 120%;
     height: auto;
-    border-bottom: 2px solid #ffaf7a;
+    border-bottom: 2px solid var(--main-text);
     font-family: "Karla", sans-serif;
     font-weight: 300;
     font-optical-sizing: auto;
@@ -196,11 +202,11 @@ header {
 .Bangla {
     margin-left: 1rem;
     width: 8rem;
-    color: #0f0f1a;
+    color: var(--background);
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 600;
-    background-color: #ffaf7a;
+    background-color: var(--main-text);
     transition: 200ms ease-in;
     cursor: pointer;
     display: inline-flex;
@@ -224,12 +230,12 @@ header {
 .button {
     margin-left: 1rem;
     width: 8rem;
-    color: #ffaf7a;
+    color: var(--main-text);
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 600;
     background-color: transparent;
-    border: 3px solid #ffaf7a;
+    border: 3px solid var(--main-text);
     transition: 200ms ease-in;
     cursor: pointer;
     display: inline-flex;
@@ -243,8 +249,8 @@ header {
 
 }
 .button:hover {
-    background-color: #ffaf7a;
-    color: #0f0f1d; 
+    background-color: var(--main-text);
+    color: var(--main-text); 
     border: 0px;
     translate: -5px -5px;   
 }
@@ -334,7 +340,7 @@ header {
     width: 15em;
     font-family: "Ubuntu", sans-serif;
     font-weight: 600;
-    color: #ffd7b7;
+    color: var(--main-text);
     background-color: #131428;
     align-content: center;
     text-align: center;
