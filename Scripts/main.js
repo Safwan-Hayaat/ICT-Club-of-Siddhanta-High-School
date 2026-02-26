@@ -22,7 +22,7 @@ function updateHeaderPosition() {
     header.classList.add('fixed-header');
   }
 }
-*/
+
 
 
 window.addEventListener('DOMContentLoaded', updateHeaderPosition);
@@ -30,16 +30,9 @@ window.addEventListener('resize', updateHeaderPosition);
 window.addEventListener()
 
 updateHeaderPosition();
-
+*/
 
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display ='flex'
 }
-
-
-}
-
-
-
-
