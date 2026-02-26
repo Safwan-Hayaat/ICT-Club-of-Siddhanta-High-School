@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* DISPLAY GRIIIIIDDDDDD */
+.credits {
+    display: grid;
+    width: auto;
+    height: 100%;
+    justify-items: left;
+    justify-content: center;
+    align-content: center;
+    margin: 5% 20%;
+    gap: 2em;
+    grid-template-areas: 
+    "box-4 box-5"
+    "box-6 box-7"
+    "box-8 box-9"
+    "box-10 box-11";
+}
+.about {
+    display: grid;
+    width: auto;
+    height: 100%;
+    justify-items: left;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5% 20%;
+    gap: 1em;
+    grid-template-areas: "box-1 box-2"
+}
+/*just making sure that this page looks fine on mobile*/
+@media(max-width: 56em) {
+    .credits {
+        justify-items: center;
+        grid-template-areas:
+         "box-4"
+         "box-5"
+         "box-6"
+         "box-7"
+         "box-8"
+         "box-9"
+         "box-10"
+         "box-11";
+         gap: 4em;
+    }
+    .about {
+        justify-items: center;
+        grid-template-areas: "box-1 box-1"
+        "box-2 box-2";
+    }
+    .item {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+.img-wrapper {
+    width: 450px;
+}
+.para {
+    font-weight: 200;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+h1 {
+    font-weight: 700;
+    color: #6a68a2;
+    font-size: 3rem;
+    margin-top: 5em;
+    text-align: center;
+    text-decoration: 2px solid #302949 underline;
+}
+.title {
+    margin-top: 5em;
+    text-decoration: underline;
+    color: #82dc87;
+    font-style: normal;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 0%;
+    font-weight: 400;
+
+}
+
+h2 {
+    color: #abafff;
+    font-size: 3rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+p {
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: large;
+}
+p:hover {
+    text-shadow: 0px 0px 10px #ffe0a6;
+}
+.box-3 {
+    justify-items: center;
+}

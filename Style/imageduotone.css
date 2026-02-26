@@ -1,0 +1,45 @@
+
+/* CSS variables. Not needed for the effect to work. */
+:root {
+  --base:              #a365ff;
+  --bg-blend:          multiply;
+  --blur:              0px;
+  --fg-blend:          lighten;
+  --foreground:        #00032c;
+  --opacity:           1;
+  --spacing:           0%;
+}
+.img-wrapper {
+  background-color:    var(--base);
+  display:             flex;
+  flex:                1 1 100%;
+  height:              100%;
+  overflow:            hidden;
+  padding:             var(--spacing);
+  position:            relative;
+}
+
+.img-wrapper img {
+  filter:              grayscale(100%) contrast(1) blur(var(--blur));
+  flex:                1 0 100%;
+  height:              100%;
+  max-width:           100%;
+  mix-blend-mode:      var(--bg-blend);
+  object-fit:          cover;
+  opacity:             var(--opacity);
+  position:            relative;
+  width:               100%;
+}
+
+.img-wrapper::before {
+  background-color:    var(--foreground);
+  bottom:              0;
+  content:             '';
+  height:              100%;
+  left:                0;
+  mix-blend-mode:      var(--fg-blend);
+  position:            absolute;
+  right:               0;
+  top:                 0;
+  width:               100%;
+}
