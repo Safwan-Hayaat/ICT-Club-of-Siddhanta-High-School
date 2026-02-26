@@ -1,6 +1,7 @@
+/*
 function updateHeaderPosition() {
   const header = document.getElementById('header');
-  /*
+  
   formerly, this was a javascipt code to make sure that the website looked fine on mobile, the headers position fixed.
   But if the headers height was too big then a large portion of the screen was basically invisible.
   so this code made sure that when the header height is over 30%, the position became relative.
@@ -38,6 +39,7 @@ function showSidebar() {
 
 
 }
+
 
 
 
