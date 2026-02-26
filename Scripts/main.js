@@ -1,9 +1,12 @@
-function updateHeaderPosition() {function updateHeaderPosition() {
+function updateHeaderPosition() {
   const header = document.getElementById('header');
+  /*
+  formerly, this was a javascipt code to make sure that the website looked fine on mobile, the headers position fixed.
+  But if the headers height was too big then a large portion of the screen was basically invisible.
+  so this code made sure that when the header height is over 30%, the position became relative.
+  But now i learned that i can just do this with css media queries T_T
   
-  /* this is a javascipt code to make sure that the website look fine on mobile, basically the headers position is fixed.
-   But if the headers height is too big then a large portion of the screen is basically invisible.
-   so this code makes sure that when the header height is over 30%, the position becomes static. */
+  
   if (!header) return;
 
   const viewportHeight = window.innerHeight;
@@ -18,6 +21,7 @@ function updateHeaderPosition() {function updateHeaderPosition() {
     header.classList.add('fixed-header');
   }
 }
+*/
 
 
 window.addEventListener('DOMContentLoaded', updateHeaderPosition);
@@ -31,5 +35,9 @@ function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display ='flex'
 }
+
+
+}
+
 
 
