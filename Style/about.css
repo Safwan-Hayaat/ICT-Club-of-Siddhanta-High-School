@@ -54,6 +54,11 @@
         text-align: center;
     }
 }
+@media (max-width: 500px) {
+    .para {
+        width: 370px;
+    }
+}
 .img-wrapper {
     width: 450px;
 }
