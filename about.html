@@ -18,29 +18,45 @@
 
 </head>
 <body>
-    <header class="header finisher-header" id="header">
+   <nav>
+    <ul class="sidebar">
+      <li><span id="nav-main">ICT club | Mirpur Siddhanta High School
+
+      </span></li>
+
+       <a id="open-nav-main" href="about.html">About</a>    
+       <a id="open-nav-main" href="#">Join</a>              
+       <a id="open-nav-main" href="#">Members</a>           
+       <a href="#" style="margin-top: 2rem;">🌐বাংলা</a>          
+    </ul>
+   </nav>
+
+  <div class="big-one">
+<header class="header finisher-header" id="header">
   <div class="first-header">
     <h3 class="not-main">The official website of the</h3>
     <a class="main" style="font-size: 3em; font-weight: 700; text-decoration: underline dotted #ffaf7a; color: #ffaf7a;" href="index.html">ICT Club</a>
-    <h3 style="line-height: 0.5em; letter-spacing: 1px; font-weight: 300;">Mirpur Siddhanta High School (established 1916)</h3>
+    <h3 class="sub-heading" style="line-height: 0.5em; letter-spacing: 1px; font-weight: 300;">Mirpur Siddhanta High School (established 1916)</h3>
   </div>
-
+<!--this section holds all the logos in the header-->
   <div class="images-header">
     <img src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-12-at-21.04.24_acaad605-1.png?w=300"  style="width: 165px; height: 150px;">
     <img src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png" style="width: 140px; height: 140px; border-radius: 50%;">
 </div>
 
-<a class="button" id="Bangla">🌐বাংলা</a>
+<!--nav bar-->
+<a class="Bangla" id="invis-on-mobile" >🌐বাংলা</a>
 
 <div class="link-header">
 
-    <a href="" class="button">About</a>
+    <a href="about.html" class="button" id="invis-on-mobile">About</a>
 
-    <a title="Join our club" class="button">Join</a>
+    <a title="Join our club" class="button" id="invis-on-mobile">Join</a>
 
-    <a class="button">Members</a>
-
-</div>
+    <a class="button" id="invis-on-mobile">Members</a>
+      <br><br>
+    <a onclick="showSidebar()" class="vis-on-mobile"><svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#e3e3e3"><path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z"/></svg></a>
+  </div>
 </header>
 <div class="title"><a class="title">About us</a></div>
 <div class="about">
