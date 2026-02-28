@@ -78,13 +78,13 @@ h1 {
 }
 .title {
     margin-top: 5em;
-    text-decoration: underline;
-    color: #82dc87;
+    color: #9b98ff;
     font-style: normal;
     text-align: center;
     font-size: 5rem;
     margin-bottom: 0%;
     font-weight: 400;
+    font-family: "Oxanium", sans-serif;
 
 }
 
