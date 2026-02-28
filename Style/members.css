@@ -1,73 +1,87 @@
-*{
-    margin-left: 0px;
-    margin-right: 0px;
+* {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 :root {
-    --head-2: 30px;
+  --head-2: 30px;
 }
 @media (min-width: 900px) {
-    .title {
-        margin-top: 4em;
-    }
-    .sub-heading-main{
+  .title {
+    margin-top: 4em;
+  }
+  .sub-heading-main {
     display: grid;
     margin-left: 20vw;
     width: 60vw;
-    }
-    table {
-        width: 60vw;
-    }
-    td {
-        font-size: 30px;
-        padding: 15px 20px;
-    }
-    th {
-        font-size: 32px;
-        padding: 10px 40px;
-    }
+  }
+  table {
+    width: 60vw;
+  }
+  td {
+    font-size: 30px;
+    padding: 15px 20px;
+  }
+  th {
+    font-size: 32px;
+    padding: 10px 40px;
+  }
+  .section {
+    font-size: 75px;
+  }
+  .class-no {
+    font-size: 80px;
+  }
 }
 @media (max-width: 900px) {
-   .title {
-        margin-top: 1em;
-   }
-   .sub-heading-main {
+  .title {
+    margin-top: 1em;
+  }
+  .sub-heading-main {
     margin: 0px;
     width: 100vw;
-   }
-   table {
+  }
+  table {
     width: 100vw;
-   }
-   td {
+  }
+  td {
     font-size: 18px;
     padding: 10px 5px;
-   }
-   th {
+  }
+  th {
     font-size: 22px;
     padding: 10px 5px;
-   }
+  }
+  .section {
+    font-size: 55px;
+    margin-top: 0px;
+  }
+  .class-no {
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
 }
 .title {
-    color: #9b98ff;
-    font-style: normal;
-    text-align: center;
-    font-size: 5rem;
-    margin-bottom: 0%;
-    font-weight: 400;
-    font-family: "Oxanium", sans-serif;
+  color: #9b98ff;
+  font-style: normal;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 0%;
+  font-weight: 400;
+  font-family: "Oxanium", sans-serif;
 }
 .title-bangla {
-  font-family: 'Kalaa', sans-serif;
+  font-family: "Kalaa", sans-serif;
   font-weight: 400;
   font-style: normal;
-
 }
-.text-bangla, td {
-  font-family: 'Noto Sans Bengali', sans-serif;
+.text-bangla,
+td {
+  font-family: "Noto Sans Bengali", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 .sub-bangla {
-    font-size: 35px;
+  font-size: 35px;
 }
 h2 {
   text-align: center;
@@ -76,33 +90,37 @@ h2 {
   line-height: 3rem;
 }
 .class-no {
-    font-weight: 500;
-    text-align: center;
-    font-size: 80px;
-    margin-top: 20vh;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20vh;
 }
 .section {
-    font-weight: 300;
-    text-align: center;
-    font-size: 75px;
+  font-weight: 300;
+  text-align: center;
 }
 td {
-    font-weight: 300;
+  font-weight: 300;
 }
 table {
-    background-image: linear-gradient(to top, hsl(6, 100%, 92%), hsl(323, 100%, 92%), hsl(275, 100%, 92%));
+  background-image: linear-gradient(
+    to top,
+    hsl(6, 100%, 92%),
+    hsl(323, 100%, 92%),
+    hsl(275, 100%, 92%)
+  );
 }
-table, td {
-    justify-self: center;
-    border: 2px solid #0f0f1a;
-    border-collapse: collapse;
-    text-align: center;
-    color: #0f0f1a;
+table,
+td {
+  justify-self: center;
+  border: 2px solid #0f0f1a;
+  border-collapse: collapse;
+  text-align: center;
+  color: #0f0f1a;
 }
 th {
-    border-bottom: 4px solid #0f0f1a;
-    background-color: #fdc3a1;
+  border-bottom: 4px solid #0f0f1a;
+  background-color: #fdc3a1;
 }
 .committee-member {
-    font-weight: 400;
+  font-weight: 400;
 }
