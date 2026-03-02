@@ -4,8 +4,8 @@
 }
 :root {
   --head-2: 30px;
-  --background: oklab(17.432% 0.00541 -0.02204);
-  --main-text: oklab(81.974% 0.06852 0.09393);
+  --background: oklch(17.432% 0.02269 283.796);
+  --main-text: oklch(81.974% 0.11626 53.891);
 }
 @media (min-width: 900px) {
   .title {
