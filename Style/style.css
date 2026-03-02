@@ -398,7 +398,7 @@ header {
   width: 100vw;
   display: grid;
   align-items: center;
-  background-image: url(Images/Mirpur_10_Night_view.png);
+  background-image: url(Mirpur_10_Night_view.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -676,4 +676,5 @@ footer {
     text-shadow: 0px 0px 20px #ffffffb3;
   }
 }
+
 
