@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-Our-Club | Mirpur Siddhanta High School</title>
+        <link
+      rel="icon"
+      type="image/png"
+      href="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png?w=172&h=163"
+    />
+
+
+    <!--connection to css-->
+    <link rel="stylesheet" href="Style\style.css" />
+    <link rel="stylesheet" href="Style/join.css" />
+
+    <!--this one syncs css to the server-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+         <!--this one is solely for the title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+       <nav>
+    <ul class="sidebar">
+      <a onclick="hideSidebar()" id="nav-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+      <li><span id="nav-main">ICT club | Mirpur Siddhanta High School
+
+      </span></li>
+
+       <a id="open-nav-main" href="about.html">About</a>    
+       <a id="open-nav-main" href="">Join</a>              
+       <a id="open-nav-main" href="members.html">Members</a>           
+       <a href="#" style="margin-top: 2rem;">🌐বাংলা</a>          
+    </ul>
+   </nav>
+
+
+<header class="header finisher-header" id="header">
+  <div class="first-header">
+    <h3 class="not-main">The official website of the</h3>
+    <a class="main" href="index.html">ICT Club</a>
+    <h3 class="sub-heading" style="line-height: 0.5em; letter-spacing: 1px; font-weight: 300;">Mirpur Siddhanta High School (established 1916)</h3>
+  </div>
+<!--this section holds all the logos in the header-->
+  <div class="images-header">
+    <img src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-12-at-21.04.24_acaad605-1.png?w=300"  style="width: 165px; height: 150px;">
+    <img src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png" style="width: 140px; height: 140px; border-radius: 50%;">
+</div>
+
+<!--nav bar-->
+<a class="Bangla" id="invis-on-mobile" >🌐বাংলা</a>
+
+<div class="link-header">
+
+    <a href="about.html" class="button" id="invis-on-mobile">About</a>
+
+    <a href="" title="Join our club" class="button" id="invis-on-mobile">Join</a>
+
+    <a href="members.html" class="button" id="invis-on-mobile">Members</a>
+      <br><br>
+    <a onclick="showSidebar()" class="vis-on-mobile"><svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#e3e3e3"><path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z"/></svg></a>
+  </div>
+</header>
+
+
+  <div class="full-form">
+    <h1 class="title">Join the ICT club</h1>
+    <p>If you are passionate about ICT and would like to join our club, partake in Computer Lab classes or make projects just like this website.
+       You can join our club by filling out this form!
+       <br><br>
+       (If you decide to fill out the form, it can take anywhere from a day to a week to join the club.)</p>
+
+    <form id="ict-club-form" autocomplete="off">
+
+    <label style="grid-area: name;">Name<span>(required)</span>
+        <input type="text" name="Full_Name" placeholder="Name" id="name" required>
+    </label>
+
+    <label style="grid-area: phone-num;">Phone-Number
+        <input type="tel" name="Phone_Number" placeholder="Write your phone number here to join the ICT club whatsapp group">
+    </label>
+
+    <label style="grid-area: class;">Class<span>(required)</span>
+        <input type="text" name="Class" placeholder="Class" required>
+    </label>
+    <label style="grid-area: roll;" >Roll<span>(required)</span>
+        <input type="text" name="Roll" placeholder="Roll" required>
+    </label>
+
+    <label style="grid-area: sec;">Section<span>(required)</span>
+        <select name="Section" id="sections" placeholder="Section">
+          <option value="A(ka)">A(ka)</option>
+          <option value="B(kha)">B(kha)</option>
+          <option value="C(ga)">C(ga)</option>
+        </select>
+    </label>
+
+        <button style="grid-area: confirm;" type="submit" id="submitBtn">Confirm</button>
+    </form>
+  </div>
+    <div id="status-msg"></div>
+
+
+
+    <footer></footer>
+
+    <!--connection to javascript-->
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts\main.js"></script>
+
+
+
+
+    <!--this one is a javascript library for making animated headers-->
+    <script
+      src="Scripts\finisher-header.es5.min (2).js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript">
+      new FinisherHeader({
+        count: 40,
+        size: {
+          min: 56,
+          max: 700,
+          pulse: 0,
+        },
+        speed: {
+          x: {
+            min: 0,
+            max: 2,
+          },
+          y: {
+            min: 0,
+            max: 0.3,
+          },
+        },
+        colors: {
+          background: "#0f0f1a",
+          particles: ["#6b8aff", "#cb268e", "#ff7474"],
+        },
+        blending: "lighten",
+        opacity: {
+          center: 0.15,
+          edge: 0.05,
+        },
+        skew: 0,
+        shapes: ["s"],
+      });
+
+      /* the js library ends here */
+    </script>
+
+</body>
+</html>
