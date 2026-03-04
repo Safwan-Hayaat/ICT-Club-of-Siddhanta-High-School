@@ -1,6 +1,6 @@
 :root {
-  --background: oklab(17.432% 0.00541 -0.02204);
-  --main-text: oklab(81.974% 0.06852 0.09393);
+  --background: #181820;
+  --main-text: #ff887a;
 }
 @media (min-width: 900px) {
  .full-form {
@@ -10,6 +10,7 @@
  body {
       background-size: cover;
       background-position-y: -10em;
+      background-image: url(pexels-shtefutsa-17568713.jpg);
  }
  #ict-club-form {
       grid-template-areas:
@@ -28,8 +29,8 @@
       top: 0vh;
  }
  body {
-      background-size: auto;
-      background-position-y: -60em;
+      background-size: cover;
+      background-image: url(pexels-shtefutsa-17568713-mobile.png);
  }
  #ict-club-form {
       grid-template-areas:
@@ -43,7 +44,6 @@
 }
 
 body {
-  background-image: url(pexels-shtefutsa-17568713.jpg);
   font-weight: 300;
   background-repeat: no-repeat;
 }
@@ -61,13 +61,13 @@ label {
     margin-bottom: 5px;
 }
 span {
-    color: #ddd;
+    color: #eee;
     padding-left: 5px;
 }
 .full-form {
     position: absolute;
     display: grid;
-    background-color: #ffffff17;
+    background-color: #7442ff17;
     justify-self: center;
     backdrop-filter: blur(10px);
     padding: 10px;
@@ -83,6 +83,10 @@ p {
   margin-bottom: 25px;
   letter-spacing: 1px;
   text-shadow: 0px 0px 10px var(--background);
+  transition: 200ms;
+}
+p:hover {
+  color: white;
 }
 #ict-club-form {
     display: grid;
@@ -101,6 +105,7 @@ input, select {
 }
 ::placeholder {
   color: #bbb;
+  font-size: 12px;
 }
 input:focus {
   background-color: #00000085;
