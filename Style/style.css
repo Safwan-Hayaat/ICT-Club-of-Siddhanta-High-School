@@ -5,7 +5,7 @@
 :root {
   --up-move: -350px;
   --background: #181820;
-  --main-text: #ff887a;
+  --main-text: #ff9387;
 }
 
 @media (min-width: 1030px) {
@@ -74,7 +74,29 @@
   "blogs-sub blogs-sub"
   "eng-blog bn-blog"
   ;
-    }
+  }
+  ::-webkit-scrollbar {
+  width: auto;
+  }
+  .clock-main {
+    padding: 0px 40px;
+  }
+  .ict-lab {
+  grid-template-areas: 
+  "lab-para lab-pic"
+  "lab-clock-sub lab-clock-sub"
+  "lab-clock-para lab-clock-para"
+  "clock-main clock-main"
+  ;
+  }
+  .announcements-lab {
+    text-align: left;
+    margin: 100px 0px 30px 10px;
+
+  }
+  .announcements-para {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 1030px) {
   .cool-back {
@@ -127,7 +149,8 @@
       "teacher-img-2 name-2"
       "teacher-img-2 description-2"
       "name-3 teacher-img-3"
-      "description-3 teacher-img-3";
+      "description-3 teacher-img-3"
+      "quote quote";
   }
   .sir-desc {
     font-size: 27px;
@@ -146,12 +169,33 @@
   "eng-blog bn-blog"
   ;
     }
+  ::-webkit-scrollbar {
+  display: none;
+  }
+  .clock-main {
+    padding: 0px 40px;
+  }
+  .ict-lab {
+  grid-template-areas: 
+  "lab-para lab-pic"
+  "lab-clock-sub lab-clock-sub"
+  "lab-clock-para lab-clock-para"
+  "clock-main clock-main"
+  ;
+  }
+  .announcements-lab {
+    text-align: left;
+    margin: 100px 0px 30px 10px;
 
-  @media (max-width: 900px) {
+  }
+  .announcements-para {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 900px) {
     .welcome-box {
       width: 300px;
       height: auto;
-      margin-top: 300px;
     }
     .welcome-para {
       font-size: 18px;
@@ -179,10 +223,7 @@
       letter-spacing: 0px;
     }
     header {
-      position: relative;
-      top: 0;
-      left: 0;
-      justify-content: flex-start;
+      position: fixed;
     }
     .svg-holder {
       display: grid;
@@ -212,8 +253,10 @@
         "name-2"
         "teacher-img-2"
         "description-2"
-        "name-3" "teacher-img-3"
-        "description-3";
+        "name-3"
+        "teacher-img-3"
+        "description-3"
+        "quote";
 
       justify-items: center;
       justify-content: center;
@@ -224,14 +267,42 @@
       line-height: 2rem;
     }
     .blogs {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-  "eng-blog eng-blog"
-  "bn-blog bn-blog"
-  ;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: 
+     "eng-blog eng-blog"
+     "bn-blog bn-blog"
+     ;
+    } 
+    .not-main, .sub-heading, .images-header {
+      display: none;
     }
+    ::-webkit-scrollbar {
+      width: auto;
   }
-  @media (max-width: 400px) {
+  .clock-main {
+    padding: 0px 0px;
+  }
+  .ict-lab {
+  grid-template-areas: 
+  "lab-pic"
+  "lab-para"
+  "lab-clock-sub"
+  "lab-clock-para"
+  "clock-main"
+  ;
+  }
+  .announcements-lab {
+    text-align: center;
+    margin: 0px;
+
+  }
+  .announcements-para {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
     .text-mirpur {
       transform: translateY(-100vh);
     }
@@ -242,8 +313,8 @@
       justify-items: center;
       justify-content: center;
     }
-  }
 }
+
 html,
 body {
   /*man im glad i learned this existed cause horizontal scrolling was the most annoying thing ever*/
@@ -258,8 +329,19 @@ body {
   color: var(--main-text);
 }
 body::selection {
-  color: #000000;
-  background-color: #82ffd599;
+  color: var(--background);
+  background-color: var(--main-text);
+}
+/*scrollbar design, YEAAAHHHH*/
+
+::-webkit-scrollbar-track {
+  background-color: hsl(from var(--background) h s calc(l + 5));
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-text);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(from var(--main-text) h s calc(l - 10)); 
 }
 a {
   color: white;
@@ -288,7 +370,7 @@ a {
   padding-top: 5vw;
 }
 .vis-on-mobile {
-  margin-left: 70vw;
+  margin-left: 10vw;
 }
 #nav-main {
   font-weight: normal;
@@ -446,7 +528,9 @@ header {
   text-shadow: 0px 0px 20px #ffffff61;
   text-align: center;
   margin-bottom: 10px;
+  padding-bottom: 5px;
   z-index: 10;
+  border-bottom: 2px dashed #757575;
 }
 .link-to-about {
   background-color: #1b1b1b99;
@@ -464,7 +548,7 @@ header {
 }
 .welcome-box {
   position: relative;
-  margin-top: 10%;
+  margin-top: 15rem;
   height: auto;
   padding: 10px 20px;
   background-color: #32408716;
@@ -514,12 +598,24 @@ header {
   font-size: large;
   letter-spacing: 2px;
 }
-.teachers-section {
+.teachers-section, .committee-mem {
   background-image: url(banner_back.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+}
+.teachers-section {
+  padding-bottom: 5vh;
+}
+.sir-quote {
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  margin-right: 3vw;
+  text-align: right;
+  border-right: 2px solid var(--main-text);
+  padding-right: 10px;
 }
 .teachers-main {
   position: relative;
@@ -529,8 +625,10 @@ header {
   text-align: center;
   font-size: 70px;
   margin-top: 0px;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Bree Serif", serif;
+  font-weight: 600;
   color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
+  padding-top: 100px;
 }
 .teachers-desc {
   letter-spacing: 1px;
@@ -598,6 +696,61 @@ header {
   grid-area: blogs-sub;
   margin-bottom: 20vh;
   line-height: 2rem;
+}
+.committee-main {
+  padding: 10vh 0vw;
+  display: grid;
+}
+.committee-chart {
+  margin-left: 5%;
+}
+.ict-lab {
+  display: grid;
+  max-width: 90vw;
+}
+.clock {
+  display: grid;
+  justify-content: center;
+  gap: 0px 20px;
+  grid-area: clock-main;
+  grid-template-areas: 
+  "time-d time-h time-m time-s"
+  "day hour min sec"
+  "sub sub sub sub"
+  ;
+}
+#day, #hour, #minute, #second { /* all of these IDs are for the clock*/
+  font-size: 60px;
+  text-align: center;
+}
+.clock-main {
+  margin-top: 50px;
+  line-height: 10px;
+  max-width: 90vw;
+  background-color: var(--main-text);
+  color: var(--background);
+  min-width: 0px;
+}
+.clock-main::selection {
+  background-color: var(--background); /* To make sure that there is actually a difference between the selected text and non-selected text*/
+  color: var(--main-text);
+}
+.time-para {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.sub-heading-timeline {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+.announcements-lab {
+  font-size: 60px;
+}
+.announcements-para {
+  font-size: 18px;
+  font-weight: 400;
 }
 footer {
   background-image: url(https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/i-made-shardscapes-wallpapers-for-both-your-phone-and-pc-v0-ofyzk1kayvzc1.jpg);
