@@ -4,8 +4,8 @@
 }
 :root {
   --head-2: 30px;
-  --background: oklch(21.276% 0.0157 284.976);
-  --main-text: #ff9387;
+  --background: #000814;
+  --main-text: #f1fffa;
 }
 @media (min-width: 900px) {
   .sub-heading-main {
@@ -119,7 +119,7 @@ td {
   font-weight: 300;
 }
 table {
-background-image: linear-gradient(to bottom, #ff9387, #ff9279, #ff926a);
+background-image: linear-gradient(to top, #4797ff, #7efff9);
 }
 table,
 td {
