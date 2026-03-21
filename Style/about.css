@@ -33,7 +33,11 @@
   grid-template-areas: "box-1 box-2";
 }
 /*just making sure that this page looks fine on mobile*/
-
+@media (min-width: 56em) {
+  #about-the-website {
+  padding: 0px 20vw;
+  }
+}
 @media (max-width: 56em) {
   .credits {
     justify-items: center;
@@ -60,6 +64,13 @@
   h2 {
     text-align: center;
   }
+  #about-the-website {
+    text-align: center;
+    padding: 0px 1vw;
+  }
+  #about-the-website > h3 {
+    width: 98vw;
+  }
 }
 @media (max-width: 500px) {
   .para {
@@ -74,6 +85,7 @@
   font-size: 1.2rem;
   letter-spacing: 2px;
   line-height: 1.5rem;
+  line-height: 2rem;  
 }
 /*this means everything on h1 aside from the footer gets the property's below*/
 h1:not(.main-footer) {
@@ -93,7 +105,11 @@ h1:not(.main-footer) {
   font-weight: 400;
   font-family: "Bree Serif", serif;
 }
-
+.about-title {
+  font-size: 40px;
+  line-height: 3rem;
+  color: hsl(from var(--background) h calc(s - 60) calc(l + 60));
+}
 h2 {
   color: oklch(from var(--background) calc(l + 0.4) calc(c + 0.05) h);
   font-size: 3rem;
@@ -116,4 +132,73 @@ p:hover {
 }
 .box-3 {
   justify-items: center;
+}
+
+/*
+  Everything below this should be treated as a separate part of this css file
+
+  This is all for a css only countup animation
+*/
+h5 {
+  font-size: 70px;
+  margin: 0px;
+}
+.count-holder {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin: 100px 0px;
+}
+.count-box {  
+  font-size: 50px;
+  padding: 10px 4vw;
+  text-align: center;
+  color: var(--background);
+  background-color: var(--main-text);
+}
+.count-holder::selection {
+  color: var(--main-text);
+  background-color: var(--background);
+}
+@property --countup {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: true;
+}
+
+.count::after {
+  content: '66';
+  counter-reset: count var(--countup);
+  content: counter(count);
+  animation: count 4s ease-out forwards 500ms ;
+}
+.count-c::after {
+  content: '7';
+  counter-reset: count var(--countup);
+  content: counter(count);
+  animation: count-c 4s forwards 500ms;
+}
+.count-t::after {
+  content: '3';
+  counter-reset: count var(--countup);
+  content: counter(count);
+  animation: count-t 4s forwards 500ms;
+}
+
+@keyframes count {
+  to {
+    --countup: 66;
+  }
+}
+
+@keyframes count-c {
+  to {
+    --countup: 7;
+  }
+}
+
+@keyframes count-t {
+  to {
+    --countup: 3;
+  }
 }
