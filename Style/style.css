@@ -486,6 +486,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   background-image: url(header-background.png);
+  background-size: cover;
   width: 100vw;
   height: auto;
   border-bottom: 2px solid hsl(from var(--background) h s calc(l + 20));;
