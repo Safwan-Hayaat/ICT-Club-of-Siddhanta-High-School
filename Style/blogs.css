@@ -9,6 +9,10 @@
 .blog-header {
     background-color: var(--main-text);
     color: var(--background-color);
+    background-image: url(grid-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 25vh 40vw 20vh 10vw;
     margin: 0;
 }
