@@ -150,3 +150,52 @@ h6 {
     border-left: 2px solid hsl(from var(--background) h calc(s - 100) calc(l + 40));
     margin-left: 10px;
 }
+
+/*Everything above was for ict history.html now its time for ict-fields.html*/
+figcaption {
+    line-height: 5px;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 50px;
+}
+.if-cl-title {
+    font-family: "bree serif", serif;
+    font-size: 70px;
+}
+.if-intro-p {
+    font-size: 20px; 
+    width: 1200px; 
+    justify-self: center;
+    color: hsl(from var(--background) h calc(s - 70) calc(l + 60));
+}
+.if-intro-p:last-child {
+    margin: 100px 0px;
+}
+.code-end {
+    border-bottom: 2px solid hsl(from var(--background) h calc(s - 70) calc(l + 60));
+    padding-bottom: 150px;
+}
+.coding-lang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 100px;
+}
+.if-content{
+    width: 500px;
+}
+.if-content:nth-child(2) {
+    margin-top: 150px;
+}
+.if-content:nth-child(3) {
+    margin-top: 300px;
+}
+
+.if-content-word {
+    width: 700px;
+}
+.if-content-word:nth-child(2) {
+    margin-top: 200px;
+}
