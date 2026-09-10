@@ -7,10 +7,6 @@ This is not meant for use to anyone outside of the schools students.
 This is a project website for the ICT club at our school. Please mind any mistakes in English grammer or bad code, since we are beginners.
 
 Librarys used,
-https://www.finisher.co/lab/header/ a free tool to make animation headers
-
-https://akashraj9828.github.io/svg-text-animation-generator/  a tool to make animated SVGs
-
 https://www.vantajs.com/ a tool to add 3d animated backgrounds to a website
 
 
