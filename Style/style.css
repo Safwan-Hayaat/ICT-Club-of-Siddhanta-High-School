@@ -490,10 +490,10 @@ header {
   color: var(--main-text);
 }
 .first-header {
-  flex-grow: 0.5;
+  flex-grow: 1;
 }
 .images-header {
-  flex-grow: 0.5;
+  flex-grow: 1;
 }
 .link-header {
   display: flex;
@@ -502,7 +502,7 @@ header {
   align-items: stretch;
   justify-content: space-between;
   font-weight: 500;
-  flex-grow: 8;
+  flex-grow: 4;
 }
 .Bangla {
   width: auto;
@@ -516,7 +516,7 @@ header {
   padding: 20px;
   font-style: normal;
   border-radius: 500vw;
-  flex-grow: 12;
+  flex-grow: 24;
 }
 .Bangla:hover {
   translate: -5px -5px;
@@ -557,7 +557,8 @@ header {
   text-decoration: none;
   display: inline-block;
   align-items: center;
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px;
+  min-width: 4em;
   font-style: normal;
   border-radius: 50vw;
 }
