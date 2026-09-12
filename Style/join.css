@@ -5,7 +5,7 @@
 @media (min-width: 900px) {
  .full-form {
       width: 40vw;
-      top: 25vh;
+      top: 22vh;
  }
  body {
       background-size: cover;
@@ -17,6 +17,7 @@
      "name name"
      "class roll"
      "sec sec"
+     "id-num id-num"
      "phone-num phone-num"
      "confirm confirm";
  }
@@ -25,7 +26,7 @@
   .full-form {
       width: auto;
       padding: 20px;
-      margin-top: 30em;
+      margin-top: 8em;
       top: 0vh;
  }
  body {
@@ -38,6 +39,7 @@
      "class"
      "roll"
      "sec"
+     "id-num"
      "phone-num"
      "confirm";
  }
@@ -52,13 +54,13 @@ body {
   text-shadow: 0px 0px 10px var(--background);
   font-style: normal;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0%;
   font-weight: 400;
   font-family: "Bree Serif", serif;
 }
 label {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 span {
     color: #eee;
@@ -67,10 +69,10 @@ span {
 .full-form {
     position: absolute;
     display: grid;
-    background-color: #7442ff17;
+    background-color: #03000c67;
     justify-self: center;
     backdrop-filter: blur(10px);
-    padding: 10px;
+    padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.397);
     border-left: 1px solid rgba(255, 255, 255, 0.397);
     border-radius: 10px;
@@ -79,7 +81,7 @@ span {
 p {
   text-align: center;
   color: var(--main-text);
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 25px;
   letter-spacing: 1px;
   text-shadow: 0px 0px 10px var(--background);
@@ -91,7 +93,7 @@ p:hover {
 #ict-club-form {
     display: grid;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 input, select {
   width: 100%;
