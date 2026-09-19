@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!--connection to css-->
+    <link rel="stylesheet" href="Style/bangla.css"/>
     <link rel="stylesheet" href="Style/style.css"/>
     <link rel="stylesheet" href="Style/blogs.css"/>
 
@@ -39,53 +40,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
     <!--this one is solely for the title-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link href="https://banglawebfonts.pages.dev/css/abu-sayed.css" rel="stylesheet">
 
 </head>
 <body>
        <nav>
     <ul class="sidebar">
       <a onclick="hideSidebar()" id="nav-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
-      <li><span id="nav-main">ICT club | Mirpur Siddhanta High School
+      <li><span id="nav-main">আইসিটি ক্লাব । মীরপুর সিদ্ধান্ত হাই স্কুল</span></li>
 
-      </span></li>
-
-       <a white id="open-nav-main" href="aboutBN.html">About</a>    
-       <a white id="open-nav-main" href="joinBN.html">Join</a>              
-       <a white id="open-nav-main" href="membersBN.html">Members</a>           
+       <a white id="open-nav-main" href="aboutBN.html">আমদের সম্পর্কে</a>    
+       <a white id="open-nav-main" href="joinBN.html">আমাদের ক্লাব জইন করুন</a>              
+       <a white id="open-nav-main" href="members.html">সদস্যের তালিকা</a>           
        <a white href="ict-fields.html" style="margin-top: 2rem;">🌐English</a>          
     </ul>
    </nav>
 
 
-<header class="header" id="header">
-  <div class="first-header">
-    <h3 class="not-main">The official website of the</h3>
-    <a class="main" href="index.html">ICT Club</a>
-    <h3 class="sub-heading" style="line-height: 0.5em; letter-spacing: 1px; font-weight: 300;">Mirpur Siddhanta High School (established 1916)</h3>
-  </div>
-<!--this section holds all the logos in the header-->
-  <div class="images-header">
-    <img src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-12-at-21.04.24_acaad605-1.png?w=300"  style="width: 165px; height: 150px;">
-    <img src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png" style="width: 140px; height: 140px; border-radius: 50%;">
-</div>
+      <header class="header" id="header">
+               <!--this section holds all the logos in the header-->
+        <div class="images-header">
+          <img class="logos-main"
+            src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-12-at-21.04.24_acaad605-1.png?w=300"
+            style="width: 120px; height: 110px"
+          />
+        <!--<img class="logos-main"
+            src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png"
+            style="width: 100px; height: 100px; border-radius: 50%"
+          />-->
+        </div> 
+        
+        <div class="first-header">
+          <a class="bn-main" href="indexBN.html">আইসিটি ক্লাব</a>
+        </div>
 
-<!--nav bar-->
-<a href="ict-fields.html" class="Bangla" id="invis-on-mobile" >🌐English</a>
+        <!--nav bar-->
+        <a href="ict-fields.html" class="Bangla" id="invis-on-mobile">English</a>
 
-<div class="link-header">
+        <div class="link-header">
+          <a white href="aboutBN.html" class="button" id="invis-on-mobile">সম্পর্ক</a>
 
-    <a href="aboutBN.html" class="button" id="invis-on-mobile">About</a>
+          <a white href="joinBN.html" title="Join our club" class="button" id="invis-on-mobile">জইন</a>
 
-    <a href="joinBN.html" title="Join our club" class="button" id="invis-on-mobile">Join</a>
+          <a white href="members.html" class="button" id="invis-on-mobile">সদস্য</a>
+          <br/><br/>
 
-    <a href="membersBN.html" class="button" id="invis-on-mobile">Members</a>
-      <br><br>
-    <a onclick="showSidebar()" class="vis-on-mobile"><svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#e3e3e3"><path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z"/></svg></a>
-  </div>
-</header>
+          <a white onclick="showSidebar()" class="vis-on-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#e3e3e3">
+              <path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z"/>
+            </svg>
+          </a>
+        </div>
+      </header>
 
 <section class="blog-header">
     <h3 class="date">ফেব্রুয়ারি ১২, ২০২৬</h3>
@@ -168,12 +174,12 @@
 
         <script async src="https://public.codepenassets.com/embed/index.js"></script>
         <p>
-        সিএসএস(CSS) অর্থাৎ ক্যাসকেডিং স্টাইল শিট(Cascading Style Sheet) হল একটি স্টাইল শিট ভাষা যা হকন ওয়িউম লি নামক এক বিজ্ঞানী এবং CERN-এর বিজ্ঞানীদের দ্বারা তৈরি হয়েছিল যা ১৯৯৬ সালে প্রকাশিত হয়। 
-        এটি একটি ওয়েবসাইটকে ডিজাইন দেওয়ার জন্য ব্যবহৃত হয়। 
-        এই কারণে, ইন্টারনেটে ডিজাইন তৈরির জন্য CSS হল প্রধান কোডিং ল্যাঙ্গুয়েজ, 
+        সিএসএস(CSS) অর্থাৎ ক্যাসকেডিং স্টাইল শিট(Cascading Style Sheet) হলো একটি স্টাইল শিট ভাষা যা হকন ওয়িউম লি এবং CERN-এর বিজ্ঞানীদের দ্বারা তৈরি হয়েছিল, এবং ১৯৯৬ সালে প্রকাশিত হয়। 
+        এটি একটি ওয়েবসাইটের ডিজাইন দেওয়ার জন্য ব্যবহৃত হয়। 
+        এই কারণে, ইন্টারনেটে ডিজাইন তৈরির জন্য CSS হলো প্রধান কোডিং ল্যাঙ্গুয়েজ, 
         এবং এটি একটি ওয়েবসাইটকে প্রাণবন্ত এবং ব্যক্তিত্ব প্রদানের জন্য HTML-এর পাশাপাশি ব্যবহার করা হয়। কিন্তু CSS-এর নিজস্ব সীমা রয়েছে। 
         CSS হলো এমন একটি ভাষা যা কেবলমাত্র বিদ্যমান কোডে ডিজাইন তৈরি করতে পারে। 
-        যার অর্থ হল CSS ব্যবহার করে, কেউ CSS ব্যবহার করে টেক্সট, ছবি বা কোনও কার্যকারিতা যোগ করতে পারে না। 
+        যার অর্থ হলো CSS ব্যবহার করে, কেউ CSS ব্যবহার করে টেক্সট, ছবি বা কোনও কার্যকারিতা যোগ করতে পারে না। 
         যে কারণে এটি একটি ওয়েবসাইট তৈরি করতে HTML-এর পাশাপাশি ব্যবহার করা হয়।
             <br><br>
         উপরে আমরা দেখতে পাচ্ছি যে আমরা আগে যে রক পেপার সিসর গেমটি দেখেছি তাতে এখন অ্যানিমেশন এবং রঙ রয়েছে। 
@@ -211,7 +217,7 @@
    </section>
    <p class="if-intro-p code-end">
     এটি ছিল হাজার হাজার কোডিং ল্যাঙ্গুয়েজের মধ্যে শুধু ৩টি কোডিং ল্যাঙ্গুয়েজের একটি মৌলিক বিশ্লেষণ। 
-    এর থেকে আমরা যা শিখতে পারি তা হল প্রতিটি কোডিং ল্যাঙ্গুয়েজ তার নিজস্ব উদ্দেশ্য পূরণ করে, কিছু অ্যাপ তৈরিতে ব্যবহার করা যেতে পারে, 
+    এর থেকে আমরা যা শিখতে পারি তা হলো প্রতিটি কোডিং ল্যাঙ্গুয়েজ তার নিজস্ব উদ্দেশ্য পূরণ করে, কিছু অ্যাপ তৈরিতে ব্যবহার করা যেতে পারে, 
     কিছু গেম তৈরিতে এবং কিছু ওয়েবসাইট তৈরিতে।
     <br><br>
     অন্যান্য বিখ্যাত প্রোগ্রামিং ভাষার মধ্যে রয়েছে জাভা (জাভাস্ক্রিপ্ট থেকে আলাদা), পাইথন(Python), সি(C), সি++(C++) এবং আরও অনেক।
@@ -223,7 +229,7 @@
     <p class="if-intro-p">
     ওয়ার্ড প্রসেসর হলো এক ধরণের সফটওয়্যার বা হার্ডওয়্যার যা ডকুমেন্ট সম্পাদনা, সংরক্ষণ, ফর্ম্যাট বা ডিজাইন করার জন্য তৈরি করা হয়েছে।
     <br><br>
-    ওয়ার্ড প্রসেসিং হল আইসিটির একটি অত্যন্ত গুরুত্বপূর্ণ দিক যা অফিসে প্রায়শই ব্যবহৃত হয়। নীচে দুটি সর্বাধিক জনপ্রিয় ওয়ার্ড প্রসেসরের তালিকা দেওয়া হল।
+    ওয়ার্ড প্রসেসিং হলো আইসিটির একটি অত্যন্ত গুরুত্বপূর্ণ দিক যা অফিসে প্রায়শই ব্যবহৃত হয়। নীচে দুটি সর্বাধিক জনপ্রিয় ওয়ার্ড প্রসেসরের তালিকা দেওয়া হল।
     </p>
 
    <section class="coding-lang" id="word-process">
@@ -309,13 +315,13 @@
     </div>
       
       <div style="grid-area: footer-text;">
-        <h1 class="main-footer main">ICT Club</h1>
-        <h2 class="main-footer main" style="font-size: 35px;">Mirpur Siddhanta High School</h2>
+        <h1 class="main-footer bn-main">আইসিটি ক্লাব</h1>
+        <h2 class="main-footer bn-main" style="font-size: 35px;">মীরপুর সিদ্ধান্ত হাই স্কুল</h2>
       </div>
 
     <div class="sir-quote footer-quote" style="border-color: #000814; ">
-      <h3>"Knowledge is strength"</h3>
-      <cite>Mirpur Siddhanta High School</cite>
+      <h3>"জ্ঞানই শক্তি"</h3>
+      <cite>মীরপুর সিদ্ধান্ত হাই স্কুল</cite>
     </div>
 
   <li class="footer-list-main">
@@ -339,7 +345,7 @@
     <ul class="footer-list">
       <a grey class="footer-nav-title"><h3>Articles</h3></a>
       <a black class="footer-nav" href="ict-history.html">Information and Communication Technology and its history</a>
-      <a black class="footer-nav" href="ict-fields.html">তথ্য ও যোগাযোগ প্রযুক্তির ক্ষেত্রসমূহ explained in a simple way</a>
+      <a black class="footer-nav" href="ict-fields.html">Fields of ICT explained in a simple way</a>
       <a black class="footer-nav" href="ict-quiz.html">A quiz on ICT</a>
     </ul>
 
@@ -354,8 +360,8 @@
 
   <div class="end-footer">
     <p>© 2026 ShiddhantaICT</p>
-    <p>hosted on Github Pages</p>
-    <a black href="https://github.com/Safwan-Hayaat/ICT-Club-of-Siddhanta-High-School" target="_blank">View source code</a>
+    <p>গিটহাব পেইজেসে হস্ট করা হয়েছে</p>
+    <a black href="https://github.com/Safwan-Hayaat/ICT-Club-of-Siddhanta-High-School" target="_blank">সোর্স কোড দেখুন</a>
 
     <span class="external-foote">
       <a href="https://www.youtube.com/@afewminuteswithenglish5864" target="_blank"><img src="Images/youtube.png" width="20px" style="border-radius: 20%;"/></a>
