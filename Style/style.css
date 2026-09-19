@@ -3,6 +3,7 @@
   margin-right: 0;
   text-wrap: pretty;
 }
+
 :root {
   --up-move: -350px;
   --background: #000814;
@@ -10,52 +11,64 @@
 }
 
 @media (min-width: 1030px) {
-    .background-video {
-      display: block;
-    }
-    .background-video-mobile {
-      display: none;
-    }
+  .background-video {
+    display: block;
+  }
+
+  .background-video-mobile {
+    display: none;
+  }
+
   .welcome-box {
     margin-left: 10%;
     margin-top: 15rem;
     width: 500px;
 
   }
+
   .credits-jubair {
     margin-left: 80%;
   }
+
   .welcome-para {
     line-height: 3rem;
     font-size: 1.4rem;
   }
+
   .text-mirpur {
     transform: translateY(var(--up-move));
   }
+
   .vis-on-mobile {
     display: none;
   }
+
   header {
     position: fixed;
     top: 0;
     left: 0;
   }
+
   .svg-holder {
     display: grid;
     position: absolute;
     top: 45%;
     animation: slick-intro-off 5s linear 1 forwards;
   }
+
   .ali-right {
     text-align: right;
   }
+
   .ali-left {
     text-align: left;
   }
+
   .teachers-desc {
     text-align: justify;
     text-justify: inter-word;
   }
+
   .teachers-main {
     grid-template-areas:
       "name teacher-img"
@@ -65,90 +78,110 @@
       "name-3 teacher-img-3"
       "description-3 teacher-img-3";
   }
+
   .sir-desc {
     font-size: 27px;
     line-height: 3rem;
   }
+
   .teachers-desc {
     width: 76vw;
     padding-left: 10px;
     font-size: 25px;
   }
+
   .blogs {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-  "blogs-head blogs-head"
-  "blogs-sub blogs-sub"
-  "eng-blog bn-blog"
-  ;
+    grid-template-areas:
+      "blogs-head blogs-head"
+      "blogs-sub blogs-sub"
+      "eng-blog bn-blog"
+    ;
   }
+
   .clock-main {
     padding: 0px 40px;
   }
+
   .ict-lab {
-  grid-template-areas: 
-  "lab-title lab-title"
-  "lab-para lab-pic"
-  "lab-clock-sub lab-clock-sub"
-  "lab-clock-para lab-clock-para"
-  "clock-main clock-main"
-  ;
+    grid-template-areas:
+      "lab-title lab-title"
+      "lab-para lab-pic"
+      "lab-clock-sub lab-clock-sub"
+      "lab-clock-para lab-clock-para"
+      "clock-main clock-main"
+    ;
   }
+
   .announcements-lab {
     text-align: left;
     margin: 100px 0px 30px 10px;
 
   }
+
   .announcements-para {
     margin-left: 20px;
   }
+
   .main-footer:nth-of-type(2) {
     border-bottom: none;
   }
+
   .end-footer {
     justify-content: left;
   }
+
   .footer-list {
     border-left: 2px solid hsl(from var(--background) h calc(s - 100) calc(l + 40));
   }
+
   .footer-list-main {
     display: flex;
   }
+
   footer {
     text-align: left;
     background-size: 100% auto;
-    grid-template-areas: 
-    "footer-logo footer-text foot-quote"
-    "footer-nav footer-nav footer-nav"
-    "last last final"
+    grid-template-areas:
+      "footer-logo footer-text foot-quote"
+      "footer-nav footer-nav footer-nav"
+      "last last final"
     ;
     grid-template-columns: 1fr 3fr 3fr;
   }
 }
+
 @media (max-width: 1030px) {
-    .background-video {
-      display: block;
-    }
-    .background-video-mobile {
-      display: none;
-    }
+  .background-video {
+    display: block;
+  }
+
+  .background-video-mobile {
+    display: none;
+  }
+
   .cool-back {
     justify-items: center;
   }
+
   .welcome-box {
     width: 500px;
     margin-top: 15rem;
   }
+
   .welcome-para {
     line-height: 3rem;
     font-size: 1.4rem;
   }
+
   .text-mirpur {
     transform: translateY(var(--up-move));
   }
+
   .vis-on-mobile {
     display: none;
   }
+
   header {
     position: fixed;
     top: 0px;
@@ -162,16 +195,20 @@
     top: 45%;
     animation: slick-intro-off 5s linear 1 forwards;
   }
+
   .ali-right {
     text-align: right;
   }
+
   .ali-left {
     text-align: left;
   }
+
   .teachers-desc {
     text-align: justify;
     text-justify: inter-word;
   }
+
   .teachers-main {
     grid-template-areas:
       "name teacher-img"
@@ -182,239 +219,293 @@
       "description-3 teacher-img-3"
       "quote quote";
   }
+
   .sir-desc {
     font-size: 27px;
     line-height: 3rem;
   }
+
   .teachers-desc {
     width: 76vw;
     padding-left: 10px;
     font-size: 25px;
   }
+
   .blogs {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-  "blogs-head blogs-head"
-  "blogs-sub blogs-sub"
-  "eng-blog bn-blog"
-  ;
-    }
+    grid-template-areas:
+      "blogs-head blogs-head"
+      "blogs-sub blogs-sub"
+      "eng-blog bn-blog"
+    ;
+  }
+
   .clock-main {
     padding: 0px 40px;
   }
+
   .ict-lab {
-  grid-template-areas: 
-  "lab-title lab-title"
-  "lab-para lab-pic"
-  "lab-clock-sub lab-clock-sub"
-  "lab-clock-para lab-clock-para"
-  "clock-main clock-main"
-  ;
+    grid-template-areas:
+      "lab-title lab-title"
+      "lab-para lab-pic"
+      "lab-clock-sub lab-clock-sub"
+      "lab-clock-para lab-clock-para"
+      "clock-main clock-main"
+    ;
   }
+
   .announcements-lab {
     text-align: left;
     margin: 100px 0px 30px 10px;
 
   }
+
   .announcements-para {
     margin-left: 20px;
   }
+
   .main-footer:nth-of-type(2) {
     border-bottom: none;
   }
+
   .end-footer {
     justify-content: left;
   }
+
   .footer-list {
     border-left: 2px solid hsl(from var(--background) h calc(s - 100) calc(l + 40));
   }
+
   .footer-list-main {
     display: flex;
   }
+
   footer {
     text-align: left;
     background-size: 100% auto;
-    grid-template-areas: 
-  "footer-logo footer-text foot-quote"
-  "footer-nav footer-nav footer-nav"
-  "last last final"
-  ;
-  grid-template-columns: 1fr 3fr 3fr;
+    grid-template-areas:
+      "footer-logo footer-text foot-quote"
+      "footer-nav footer-nav footer-nav"
+      "last last final"
+    ;
+    grid-template-columns: 1fr 3fr 3fr;
   }
 }
+
 @media (max-width: 900px) {
-    .background-video {
-      display: none;
-    }
-    .background-video-mobile {
-      display: block;
-    }
-    .welcome-box {
-      width: 300px;
-      height: auto;
-      margin-top: 100px;
-    }
-    .welcome-para {
-      font-size: 18px;
-      line-height: 2rem;
-    }
-    #invis-on-mobile {
-      display: none;
-      visibility: hidden;
-      opacity: 0%;
-    }
+  .background-video {
+    display: none;
+  }
 
-    #Bangla {
-      display: none;
-    }
-    .vis-on-mobile {
-      display: grid;
-      align-items: start;
-    }
-    header {
-      position: fixed;
-    }
-    .svg-holder {
-      animation: none;
-    }
-    .ali-right {
-      text-align: center;
-    }
-    .ali-left {
-      text-align: center;
-    }
-    .teachers-desc {
-      display: grid;
-      text-align: center;
-      justify-content: center;
-      justify-items: center;
-      width: 100vw;
-      padding: 1px;
-      font-size: 20px;
-    }
-    .teachers-main {
-      grid-template-areas:
-        "name"
-        "teacher-img"
-        "description"
-        "name-2"
-        "teacher-img-2"
-        "description-2"
-        "name-3"
-        "teacher-img-3"
-        "description-3"
-        "quote";
+  .background-video-mobile {
+    display: block;
+  }
 
-      justify-items: center;
-      justify-content: center;
-    }
-    .sir-desc {
-      font-size: 22px;
-      line-height: 1rem;
-      line-height: 2rem;
-    }
-    .blogs {
-     grid-template-columns: 1fr 1fr;
-     grid-template-areas: 
-     "eng-blog eng-blog"
-     "bn-blog bn-blog"
-     ;
-    } 
-    .not-main, .sub-heading, .images-header, .header-nav-desktop {
-      display: none;
-    }
+  .welcome-box {
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .welcome-para {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+
+  #invis-on-mobile {
+    display: none;
+    visibility: hidden;
+    opacity: 0%;
+  }
+
+  #Bangla {
+    display: none;
+  }
+
+  .vis-on-mobile {
+    display: grid;
+    align-items: start;
+  }
+
+  header {
+    position: fixed;
+  }
+
+  .svg-holder {
+    animation: none;
+  }
+
+  .ali-right {
+    text-align: center;
+  }
+
+  .ali-left {
+    text-align: center;
+  }
+
+  .teachers-desc {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    padding: 1px;
+    font-size: 20px;
+  }
+
+  .teachers-main {
+    grid-template-areas:
+      "name"
+      "teacher-img"
+      "description"
+      "name-2"
+      "teacher-img-2"
+      "description-2"
+      "name-3"
+      "teacher-img-3"
+      "description-3"
+      "quote";
+
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .sir-desc {
+    font-size: 22px;
+    line-height: 1rem;
+    line-height: 2rem;
+  }
+
+  .blogs {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "eng-blog eng-blog"
+      "bn-blog bn-blog"
+    ;
+  }
+
+  .not-main,
+  .sub-heading,
+  .images-header,
+  .header-nav-desktop {
+    display: none;
+  }
+
   .clock-main {
     padding: 0px 0px;
   }
+
   .ict-lab {
-  grid-template-areas: 
-  "lab-title"
-  "lab-pic"
-  "lab-para"
-  "lab-clock-sub"
-  "lab-clock-para"
-  "clock-main"
-  ;
+    grid-template-areas:
+      "lab-title"
+      "lab-pic"
+      "lab-para"
+      "lab-clock-sub"
+      "lab-clock-para"
+      "clock-main"
+    ;
   }
+
   .announcements-lab {
     text-align: center;
     margin: 0px;
 
   }
+
   .announcements-para {
     margin-left: 0px;
     text-align: center;
   }
+
   .main-footer:nth-of-type(2) {
     border-left: 2px solid hsl(from var(--background) h calc(s - 100) calc(l + 40));
   }
+
   .footer-list {
     border-left: none
   }
+
   .footer-quote {
     display: none;
   }
+
   .end-footer {
     justify-content: center;
   }
+
   .footer-list-main {
     display: grid;
-    grid-template-areas: 
-    "1"
-    "2"
-    "3"
-    "4"
-   ;
+    grid-template-areas:
+      "1"
+      "2"
+      "3"
+      "4"
+    ;
   }
+
   footer {
     text-align: center;
     justify-content: center;
     background-size: auto 100%;
-    grid-template-areas: 
-  "footer-logo footer-logo"
-  "footer-text footer-text"
-  "footer-nav footer-nav"
-  "last last"
-  ;
+    grid-template-areas:
+      "footer-logo footer-logo"
+      "footer-text footer-text"
+      "footer-nav footer-nav"
+      "last last"
+    ;
     grid-template-columns: auto auto auto;
   }
 }
 
 @media (max-width: 400px) {
-    .svg-holder {
-      display: none;
-    }
-    .teachers-main {
-      justify-items: center;
-      justify-content: center;
-    }
+  .svg-holder {
+    display: none;
+  }
+
+  .teachers-main {
+    justify-items: center;
+    justify-content: center;
+  }
 }
 
-html, body, svg, g, .committee-mem, .teachers-section, .clock-main, .timeline, #blogs, header {
-/*  man im glad i learned this existed cause horizontal scrolling was the most annoying thing ever*/
+html,
+body,
+svg,
+g,
+.committee-mem,
+.teachers-section,
+.clock-main,
+.timeline,
+#blogs,
+header {
+  /*  man im glad i learned this existed cause horizontal scrolling was the most annoying thing ever*/
   overflow-x: clip;
   max-width: 100vw;
 
 }
+
 body {
   background-color: var(--background);
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
   font-style: normal;
   color: var(--main-text);
 }
+
 body::selection {
   color: var(--background);
   background-color: var(--main-text);
 }
+
 a {
   text-decoration: none;
   font-style: normal;
 }
+
 #open-nav-main:hover {
   backdrop-filter: blur(20px);
 }
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -434,14 +525,18 @@ a {
   padding-top: 10px;
   margin: 0;
 }
+
 .vis-on-mobile {
   margin-left: 10vw;
 }
+
 #nav-main {
   font-weight: normal;
   font-size: 18px;
 }
-.sidebar, li {
+
+.sidebar,
+li {
   list-style: none;
 }
 
@@ -451,6 +546,7 @@ nav {
   line-height: 2rem;
   font-size: larger;
 }
+
 header {
   display: flex;
   flex-direction: row;
@@ -462,7 +558,7 @@ header {
   background-size: cover;
   width: 100vw;
   height: auto;
-  border-bottom: 1px solid hsl(from var(--background) h calc(s - 20) calc(l + 20));;
+  border-bottom: 1px solid hsl(from var(--background) h calc(s - 20) calc(l + 20));
   font-family: "Karla", sans-serif;
   font-weight: 300;
   font-optical-sizing: auto;
@@ -470,10 +566,12 @@ header {
   z-index: 997;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.751);
 }
+
 .logos-main {
   width: 140px;
   height: 140px;
 }
+
 /*
 .fixed-header {
     position: fixed;
@@ -489,12 +587,15 @@ header {
   font-size: 6em;
   color: var(--main-text);
 }
+
 .first-header {
   flex-grow: 1;
 }
+
 .images-header {
   flex-grow: 1;
 }
+
 .link-header {
   display: flex;
   justify-self: stretch;
@@ -504,6 +605,7 @@ header {
   font-weight: 500;
   flex-grow: 4;
 }
+
 .Bangla {
   width: auto;
   color: var(--main-text);
@@ -518,9 +620,11 @@ header {
   border-radius: 500vw;
   flex-grow: 24;
 }
+
 .Bangla:hover {
   translate: -5px -5px;
 }
+
 .header-nav-desktop {
   color: var(--main-text);
   width: 25%;
@@ -538,11 +642,13 @@ header {
   align-items: center;
   font-style: normal;
 }
+
 .header-nav-desktop:hover {
   background-color: #f1fffa22;
   color: hsl(from var(--background) h calc(s + 10) calc(l + 60));
   transform: scale(1.1);
 }
+
 /*everything above this until "header" is the style of the header or a part of the header, i know this is insane but im making this website for a project so whatever*/
 .button {
   margin-left: 1rem;
@@ -562,12 +668,14 @@ header {
   font-style: normal;
   border-radius: 50vw;
 }
+
 .button:hover {
   background-color: var(--main-text);
   color: var(--background);
   border: 0px;
   transform: scale(1.1);
 }
+
 .background-video {
   position: absolute;
   top: 0;
@@ -576,6 +684,7 @@ header {
   transform: translateY(-100px);
   width: 100%;
 }
+
 .background-video-mobile {
   position: absolute;
   top: 0;
@@ -584,9 +693,12 @@ header {
   max-width: 100vw;
   z-index: -10;
 }
-.teachers-section, #blogs {
+
+.teachers-section,
+#blogs {
   background-color: var(--background);
 }
+
 /*
 This used to be the old background of the front of the website. But i changed it to a video
 
@@ -616,6 +728,7 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   z-index: 10;
   border-bottom: 2px dashed #757575;
 }
+
 .link-to-about {
   background-color: #1b1b1b99;
   border-radius: 10px;
@@ -624,20 +737,26 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   text-decoration-color: var(--main-text);
   color: var(--background);
 }
+
 /* since i couldn't get the footers texts to be black, i had to used an attribute.*/
 [white] {
-  color: var(--main-text); /*white is for every a tag outside the footer while black is for the nav in the header*/
+  color: var(--main-text);
+  /*white is for every a tag outside the footer while black is for the nav in the header*/
 }
+
 [black] {
   color: var(--background);
 }
+
 .link-to-about:hover {
   background-color: #33333399;
 }
+
 .welcome:hover {
   text-shadow: none;
   transition: 500ms ease;
 }
+
 .welcome-box {
   position: relative;
   height: auto;
@@ -651,6 +770,7 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   box-shadow: 20px 20px 10px #0f0f1d45;
   color: white;
 }
+
 /*a credits box that credits the credited owner of the image on the top of the website*/
 .credits-jubair {
   display: grid;
@@ -666,16 +786,20 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   font-size: large;
   letter-spacing: 2px;
 }
-.teachers-section, .committee-mem {
+
+.teachers-section,
+.committee-mem {
   background-image: url(banner_back.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
+
 .teachers-section {
   padding-bottom: 5vh;
 }
+
 .sir-quote {
   font-weight: 400;
   letter-spacing: 2px;
@@ -685,10 +809,12 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   border-right: 2px solid var(--main-text);
   padding-right: 10px;
 }
+
 .teachers-main {
   position: relative;
   display: grid;
 }
+
 .title-teachers {
   text-align: center;
   font-size: 70px;
@@ -698,6 +824,7 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
   padding-top: 100px;
 }
+
 .teachers-desc {
   letter-spacing: 1px;
   line-height: 1.7rem;
@@ -706,26 +833,28 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   background-size: cover;
   background-image: url();
   color: oklch(from var(--background) calc(l + 0.5) calc(c + 0.03) h);
-  border-bottom: 2px dashed
-    oklch(from var(--background) calc(l + 0.1) calc(c + 0.01) h);
+  border-bottom: 2px dashed oklch(from var(--background) calc(l + 0.1) calc(c + 0.01) h);
 }
+
 .sir-name {
   font-size: 70px;
   padding: 25px;
   margin: 0;
   font-weight: 500;
 }
+
 .sir-name:hover {
-  text-shadow: 
+  text-shadow:
     -1px -1px 0 hsl(from var(--main-text) calc(h + 280) calc(s - 30) calc(l - 30)),
-    1px  -1px 0 hsl(from var(--main-text) calc(h + 340) calc(s - 30) calc(l - 30)),
+    1px -1px 0 hsl(from var(--main-text) calc(h + 340) calc(s - 30) calc(l - 30)),
     -1px 1px 0 hsl(from var(--main-text) calc(h + 40) calc(s - 30) calc(l - 30)),
-    1px  1px 0 hsl(from var(--main-text) h s l),
-    0px  0px 50px var(--background);
+    1px 1px 0 hsl(from var(--main-text) h s l),
+    0px 0px 50px var(--background);
   color: var(--background);
   transition: 300ms ease-in;
-  
+
 }
+
 .sir-desc {
   padding: 25px;
   justify-content: start;
@@ -733,24 +862,30 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   font-weight: 400;
   letter-spacing: 1px;
 }
+
 #blogs {
   color: var(--background);
   background-color: var(--main-text);
   padding-top: 10vh;
 }
+
 .blogs {
   display: grid;
   justify-content: center;
 }
+
 .blogs-main {
   margin: 0vh 0px 0px 10vw;
 }
-.blogs-bn, .blogs-eng {
+
+.blogs-bn,
+.blogs-eng {
   margin: 20px 0px 20px 10vw;
   line-height: 3rem;
   font-weight: 300;
   color: var(--background);
 }
+
 .blogs-head {
   font-size: 70px;
   margin: 0px;
@@ -758,6 +893,7 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   letter-spacing: 2px;
   grid-area: blogs-head;
 }
+
 .blogs-sub {
   font-weight: 400;
   letter-spacing: 1px;
@@ -765,10 +901,12 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   margin-bottom: 20vh;
   line-height: 2rem;
 }
+
 .committee-main {
   padding: 10vh 0vw;
   display: grid;
 }
+
 .committee-chart {
   margin-left: 5%;
 }
@@ -776,21 +914,28 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
 .ict-lab {
   display: grid;
 }
+
 .clock {
   display: grid;
   justify-content: center;
   gap: 0px 10px;
   grid-area: clock-main;
-  grid-template-areas: 
-  "time-d time-h time-m time-s"
-  "day hour min sec"
-  "sub sub sub sub"
+  grid-template-areas:
+    "time-d time-h time-m time-s"
+    "day hour min sec"
+    "sub sub sub sub"
   ;
 }
-#day, #hour, #minute, #second { /* all of these IDs are for the clock*/
+
+#day,
+#hour,
+#minute,
+#second {
+  /* all of these IDs are for the clock*/
   font-size: 60px;
   text-align: center;
 }
+
 .clock-main {
   margin-top: 50px;
   line-height: 10px;
@@ -798,23 +943,30 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   color: var(--background);
   min-width: 0px;
 }
-.clock-main::selection, #blogs::selection {
-  background-color: var(--background); /* To make sure that there is actually a difference between the selected text and non-selected text*/
+
+.clock-main::selection,
+#blogs::selection {
+  background-color: var(--background);
+  /* To make sure that there is actually a difference between the selected text and non-selected text*/
   color: var(--main-text);
 }
+
 .time-para {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
+
 .sub-heading-timeline {
   text-align: center;
   font-size: 30px;
   margin-bottom: 100px;
 }
+
 .announcements-lab {
   font-size: 60px;
 }
+
 .announcements-para {
   font-size: 18px;
   font-weight: 400;
@@ -826,16 +978,20 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
 .footer-list-main {
   grid-area: footer-nav;
 }
+
 /*defining the grid-area without tailwind css*/
 .footer-list:nth-of-type(1) {
   grid-area: 1;
 }
+
 .footer-list:nth-of-type(2) {
   grid-area: 2;
 }
+
 .footer-list:nth-of-type(3) {
   grid-area: 3;
 }
+
 .footer-list:nth-of-type(4) {
   grid-area: 4;
 }
@@ -848,13 +1004,16 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   font-size: 12px;
 
 }
+
 .footer-nav {
   line-height: 2rem;
   color: var(--background);
 }
+
 [grey] {
   color: hsl(from var(--background) h calc(s - 100) calc(l + 40));
 }
+
 .main-footer {
   font-style: normal;
   text-decoration: none;
@@ -863,6 +1022,7 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   text-align: left;
   font-weight: 400;
 }
+
 .end-footer {
   font-weight: 500;
   font-size: 12px;
@@ -874,6 +1034,7 @@ literally cool-back means cool background, (credits to Jubair, whose picture i u
   border-top: 2px solid hsl(from var(--background) h calc(s - 100) calc(l + 40));
   color: var(--background);
 }
+
 footer {
   background-image: url(https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/i-made-shardscapes-wallpapers-for-both-your-phone-and-pc-v0-ofyzk1kayvzc1.jpg);
   background-color: white;
