@@ -50,6 +50,7 @@
 
 body {
   background: url(wallpaper-atmospheric-1789550818051.png);
+  background-size: cover;
   background-position: bottom;
   color: #fff;
   display: flex;
