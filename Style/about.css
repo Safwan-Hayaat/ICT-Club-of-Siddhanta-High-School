@@ -12,8 +12,8 @@
   justify-items: left;
   justify-content: center;
   align-content: center;
-  margin: 5% 20%;
-  gap: 2em;
+  margin: 5% 15%;
+  gap: 1em 20em;
   grid-template-areas:
     "box-4 box-5"
     "box-6 box-7"
@@ -28,14 +28,14 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 5% 20%;
+  margin: 5% 15%;
   gap: 1em;
   grid-template-areas: "box-1 box-2";
 }
 /*just making sure that this page looks fine on mobile*/
 @media (min-width: 56em) {
   #about-the-website {
-  padding: 0px 20vw;
+  padding: 0px 15vw;
   }
 }
 @media (max-width: 56em) {
@@ -101,7 +101,7 @@ h1:not(.main-footer) {
   text-align: center;
   font-size: 5rem;
   margin-bottom: 0%;
-  margin-top: 15rem;
+  margin-top: 10rem;
   font-weight: 400;
   font-family: "Bree Serif", serif;
 }
@@ -111,8 +111,8 @@ h1:not(.main-footer) {
   color: hsl(from var(--background) h calc(s - 60) calc(l + 60));
 }
 h2 {
-  color: oklch(from var(--background) calc(l + 0.4) calc(c + 0.05) h);
-  font-size: 3rem;
+  color: oklch(from var(--background) calc(l + 0.7) calc(c + 0.1) h);
+  font-size: 4em;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -124,7 +124,7 @@ summary {
 p:not([small]) {
   font-weight: 200;
   letter-spacing: 2px;
-  font-size: large;
+  font-size: 1.5em;
 }
 p:hover {
   text-shadow: 0px 0px 10px
@@ -150,7 +150,7 @@ h5 {
   margin: 100px 0px;
 }
 .count-box {  
-  font-size: 50px;
+  font-size: 10px;
   padding: 10px 4vw;
   text-align: center;
   color: var(--background);
