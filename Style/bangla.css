@@ -1,0 +1,29 @@
+* {
+    letter-spacing: 0px !important;
+}
+:root {
+  --main-text: #f1fffa;
+}
+.bn-main {
+  font-family: 'Abu Sayed', sans-serif;
+  font-style: normal;
+  color: var(--main-text);
+  font-size: 2em;
+  margin: 10px;
+  text-align: center;
+}
+@media (min-width:1030px) {
+.bn-main {
+  font-size: 4em;
+}
+}
+.footer-quote {
+  font-size: 25px;
+}
+.bn-title {
+  font-family: 'Sapa', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
+
+}

@@ -1,0 +1,253 @@
+@media print {
+  body * {
+    visibility: hidden;
+    transform: scale(1.1); 
+  }
+
+  #cert-container,
+  #cert-container * {
+    visibility: visible;
+  }
+
+  #cert-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .certificate-box {
+    min-width: 600px;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 3em;
+  }
+  .quiz-card {
+    margin-top: 4em;
+  }
+}
+
+@media (min-width: 900px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+:root {
+  --background: #000814;
+  --main-text: #f1fffa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(wallpaper-atmospheric-1789550818051.png);
+  background-position: bottom;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 15px;
+}
+
+.quiz-card {
+  background: #000814bb;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid hsl(from var(--background) h calc(s - 20) calc(l + 20));
+}
+
+.title {
+  color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
+  font-style: normal;
+  text-align: center;
+  margin: 0rem 0rem 1rem 0rem;
+  font-family: "Bree Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  text-align: center;
+  color: #8295ff;
+  margin-top: 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 15px;
+  background: #000814cc;
+  padding: 10px;
+  border-radius: 9px;
+  color: #94a3b8;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.badge-easy {
+  background: #22c55e;
+  color: #fff;
+}
+
+.badge-medium {
+  background: #eab308;
+  color: #000;
+}
+
+.badge-hard {
+  background: #f97316;
+  color: #fff;
+}
+
+.badge-extreme {
+  background: #ef4444;
+  color: #fff;
+}
+
+.question-box {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f8fafc;
+}
+
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn, .btn {
+  color: var(--main-text);
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--main-text);
+  transition: 50ms ease-in;
+  display: inline-flex;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  padding: 15px 30px;
+  min-width: 100%;
+  font-style: normal;
+  border-radius: 20px;
+}
+
+.option-btn:hover, .btn:hover {
+  background-color: var(--main-text);
+  color: var(--background);
+  border: 0px;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+.feedback {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 15px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #cbd5e1;
+}
+
+.form-group input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #334155;
+  background: #00081422;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  font-size: 15px;
+}
+
+.form-group input[readonly] {
+  background: #000814aa;
+  color: #38bdf8;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+.cert-border {
+  border: 3.5px double #000814;
+  background-image: url(3d-abstract-wave-pattern-background_53876-116945.png);
+  background-size: cover;
+}
+.certificate-box {
+  background: #e7eaff;
+  color: #1e293b;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.certificate-box h1 {
+  font-size: 30px;
+  color: hsl(from var(--background) h s calc(l + 20));
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.certificate-box h3 {
+  color: #334155;
+  margin-top: 0;
+}
+
+.cert-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0f172a;
+  border-bottom: 2px solid hsl(from var(--background) h s calc(l + 20));
+  display: inline-block;
+  padding: 0 15px 2px;
+  margin: 10px 0;
+}
+
+.cert-details {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.cert-score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #008832;
+  margin-bottom: 10px;
+}
