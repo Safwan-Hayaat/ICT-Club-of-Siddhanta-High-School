@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <!--this page is a quiz in my website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="About the ICT club, Quiz, ICT Quiz, ICT, Mirpur Siddhanta High School, Siddhanta High School, ICT club, IT, Information and Communication technology, Siddhanto, sidhanto, Shiddanto, Sidanto, Siddanto, Siddanta, Shidhanto High School, SiddhantaICT, shiddhanta ict, shiddhanta school quiz">
+    <meta name="description" content="আইসিটি ক্লাবের ওয়েবসাইটের কুইজে অংশগ্রহণ করুন।">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="সিদ্ধান্ত আইসিটি | কুইজ">
+    <meta property="og:description" content="আইসিটি ক্লাবের ওয়েবসাইটের কুইজে অংশগ্রহণ করুন।">
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/1167269349/e13cf745-2f52-4274-904b-66970366f5f3">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta name="twitter:title" content="সিদ্ধান্ত আইসিটি | কুইজ">
+    <meta name="twitter:description" content="আইসিটি ক্লাবের ওয়েবসাইটের কুইজে অংশগ্রহণ করুন।">
+    <meta name="twitter:image"content="https://repository-images.githubusercontent.com/1167269349/e13cf745-2f52-4274-904b-66970366f5f3">
+
+    <!-- Meta Tags Generated via https://www.opengraph.io -->
+
+    <title>সিদ্ধান্ত আইসিটি | কুইজ</title>
+    <link rel="icon" type="image/png" href="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png?w=172&h=163">
+
+    <!--this basically makes sure that all the css works fine with the browser-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--connection to css-->
+    <link rel="stylesheet" href="Style/bangla.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/quiz.css" />
+
+    <!--fonts i used-->
+    <link href="https://banglawebfonts.pages.dev/css/sapa.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!--this one is solely for the title-->
+    <link href="https://banglawebfonts.pages.dev/css/abu-sayed.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <a onclick="hideSidebar()" id="nav-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></a>
+            <li><span id="nav-main">আইসিটি ক্লাব । মীরপুর সিদ্ধান্ত হাই স্কুল</span></li>
+
+            <a white id="open-nav-main" href="aboutBN.html">আমদের সম্পর্কে</a>
+            <a white id="open-nav-main" href="joinBN.html">আমাদের ক্লাব জইন করুন</a>
+            <a white id="open-nav-main" href="members.html">সদস্যের তালিকা</a>
+            <a white href="ict-quiz.html" style="margin-top: 2rem;">🌐English</a>
+        </ul>
+    </nav>
+
+    <header class="header" id="header">
+        <!--this section holds all the logos in the header-->
+        <div class="images-header">
+            <img class="logos-main"
+                src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-12-at-21.04.24_acaad605-1.png?w=300"
+                style="width: 120px; height: 110px" />
+            <!--- <img class="logos-main"
+            src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png"
+            style="width: 100px; height: 100px; border-radius: 50%"
+          />-->
+        </div>
+
+        <div class="first-header">
+            <a class="bn-main" href="indexBN.html">আইসিটি ক্লাব</a>
+        </div>
+
+        <!--nav bar-->
+        <a href="ict-quiz.html" class="Bangla" id="invis-on-mobile">English</a>
+
+        <div class="link-header">
+            <a white href="aboutBN.html" class="button" id="invis-on-mobile">সম্পর্ক</a>
+
+            <a white href="joinBN.html" title="Join our club" class="button" id="invis-on-mobile">জইন</a>
+
+            <a white href="members.html" class="button" id="invis-on-mobile">সদস্য</a>
+            <br /><br />
+
+            <a white onclick="showSidebar()" class="vis-on-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
+                    fill="#e3e3e3">
+                    <path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="quiz-card">
+        <h1 class="bn-title" style="text-align: center; font-size: 4rem; margin: 1rem;">কুইজ</h1>
+
+        <div id="start-screen" style="text-align: center;">
+            <p style="color: #cbd5e1;">প্রশ্নের সংখ্যা: ১০০</p>
+            <p style="font-size: 13px; color: #94a3b8;">ধাপসমূহ: Easy (৪০) ➔ Medium (৩০) ➔ Hard (২০) ➔ Extreme (১০)</p>
+            <button class="button" onclick="startGame()">কুইজ শুরু করুন</button>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div class="stats">
+                <span>প্রশ্ন: <span id="q-count">1</span>/100</span>
+                <span>লেভেল: <span id="level-badge" class="badge"></span></span>
+                <span>স্কোর: <span id="score">0</span></span>
+            </div>
+            <div class="question-box" id="question"></div>
+            <div class="options-grid" id="options-container"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div id="user-form-screen" class="hidden">
+            <h3>অভিনন্দন, আপনি কুইজ সম্পন্ন করেছেন।</h3>
+            <p style="text-align: center; font-size: 14px; color: #cbd5e1;">সার্টিফিকেট পেতে আপনার সঠিক তথ্য লিখুন:</p>
+            <form id="info-form" onsubmit="generateCertificate(event)">
+                <div class="form-group">
+                    <label>নাম:</label>
+                    <input type="text" id="u-name" required placeholder="আপনার পুরো নাম লিখুন">
+                </div>
+                <div class="form-group">
+                    <label>শ্রেণী:</label>
+                    <input type="text" id="u-class" required placeholder="যেমন: সপ্তম">
+                </div>
+                <div class="form-group">
+                    <label>শাখা:
+                        <select id="u-section" required>
+                         <option value="ক">ক</option>
+                         <option value="খ">খ</option>
+                         <option value="গ">গ</option>
+                      </select>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>রোল:</label>
+                    <input type="number" id="u-roll" required placeholder="আপনার রোল নম্বর">
+                </div>
+                <div class="form-group">
+                    <label>স্কুলের নাম:</label>
+                    <input type="text" value="মিরপুর সিদ্ধান্ত হাই স্কুল" readonly>
+                </div>
+                <button type="submit" class="btn">সার্টিফিকেট তৈরি করুন</button>
+            </form>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <div id="cert-container">
+                <div class="certificate-box">
+                   <div class="cert-border">
+                    <h2 style="font-family: 'Abu Sayed'; font-size: 2em;">মীরপুর সিদ্ধান্ত হাই স্কুল</h2>
+                    <p style="font-size: 12px; margin: -8px 0 10px; color: #64748b;">আইসিটি ক্লাব আয়োজিত অনলাইন কুইজ
+                        প্রতিযোগিতা</p>
+                    <h1 style="font-family: 'Sapa', serif;">কৃতি সনদ</h1>
+                    <p style="margin: 5px 0;">এতদ্বারা সদয় আনন্দের সাথে প্রত্যয়ন করা যাচ্ছে যে,</p>
+                    <div class="cert-name" id="c-name">নাম</div>
+                    <div class="cert-details">
+                        শ্রেণী: <b id="c-class"></b> | শাখা: <b id="c-section"></b> | রোল: <b id="c-roll"></b>
+                    </div>
+                    <p style="font-size: 13px; color: #222c3a;">১০০টি আইসিটি বিষয়ের প্রশ্নের উত্তর
+                        প্রদান করেছেন।</p>
+                    <div class="cert-score">প্রাপ্ত নম্বর: <span id="c-score"></span> / 100</div>
+                   </div>
+                </div>
+            </div>
+            <button class="btn no-print" style="margin-top: 8px; color: #94a3b8; border-color: #94a3b8;" onclick="window.print()">সার্টিফিকেট ডাউনলোড / প্রিন্ট করুন</button>
+            <button class="btn no-print" style="margin-top: 8px;"
+                onclick="location.reload()">পুনরায় খেলুন</button>
+        </div>
+    </div>
+
+    <!--connection to javascript-->
+    <script src="Scripts\main.js"></script>
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts\quizBN.js"></script>
+    <script src="Scripts/quizBN.js"></script>
+</body>
+
+</html>

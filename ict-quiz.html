@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <!--this page is a quiz in my website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="About the ICT club, Quiz, ICT Quiz, ICT, Mirpur Siddhanta High School, Siddhanta High School, ICT club, IT, Information and Communication technology, Siddhanto, sidhanto, Shiddanto, Sidanto, Siddanto, Siddanta, Shidhanto High School, SiddhantaICT, shiddhanta ict, shiddhanta school quiz">
+    <meta name="description" content="Participate in the ICT club online quiz.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SiddhantaICT | Quiz">
+    <meta property="og:description" content="Participate in the ICT club online quiz.">
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/1167269349/e13cf745-2f52-4274-904b-66970366f5f3">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta name="twitter:title" content="SiddhantaICT | Quiz">
+    <meta name="twitter:description" content="Participate in the ICT club online quiz.">
+    <meta name="twitter:image" content="https://repository-images.githubusercontent.com/1167269349/e13cf745-2f52-4274-904b-66970366f5f3">
+
+    <!-- Meta Tags Generated via https://www.opengraph.io -->
+
+    <title>SiddhantaICT | Quiz</title>
+    <link rel="icon" type="image/png"
+        href="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png?w=172&h=163">
+
+    <!--this basically makes sure that all the css works fine with the browser-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--connection to css-->
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/quiz.css" />
+
+    <!--fonts i used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!--this one is solely for the title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<nav>
+    <ul class="sidebar">
+      <a onclick="hideSidebar()" id="nav-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+      <li><span id="nav-main">ICT club | Mirpur Siddhanta High School
+
+      </span></li>
+
+       <a white id="open-nav-main" href="about.html">About</a>    
+       <a white id="open-nav-main" href="join.html">Join</a>              
+       <a white id="open-nav-main" href="members.html">Members</a>           
+       <a white href="ict-quizBN.html" style="margin-top: 2rem;">🌐বাংলা</a>          
+    </ul>
+</nav>
+
+
+<header class="header" id="header">
+               <!--this section holds all the logos in the header-->
+        <div class="images-header">
+          <img class="logos-main"
+            src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-12-at-21.04.24_acaad605-1.png?w=300"
+            style="width: 120px; height: 110px"
+          />
+        <!--<img class="logos-main"
+            src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png"
+            style="width: 100px; height: 100px; border-radius: 50%"
+          />-->
+        </div> 
+        
+        <div class="first-header">
+          <a class="main" href="index.html">ICT Club</a>
+        </div>
+
+        <!--nav bar-->
+        <a href="ict-quizBN.html" class="Bangla" id="invis-on-mobile"> বাংলা </a>
+
+        <div class="link-header">
+          <a white href="about.html" class="button" id="invis-on-mobile">About</a>
+
+          <a white href="join.html" title="Join our club" class="button" id="invis-on-mobile">Join</a>
+
+          <a white href="members.html" class="button" id="invis-on-mobile">Members</a>
+          <br/><br/>
+
+          <a white onclick="showSidebar()" class="vis-on-mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#e3e3e3">
+              <path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z"/>
+            </svg>
+          </a>
+        </div>
+</header>
+
+<div class="quiz-card">
+        <h1 class="title">Quiz</h1>
+
+        <div id="start-screen" style="text-align: center;">
+            <p style="color: #cbd5e1;">Number of Questions: 100</p>
+            <p style="font-size: 13px; color: #94a3b8;">Steps: Easy (40) ➔ Medium (30) ➔ Hard (20) ➔ Extreme (10)</p>
+            <button class="button" onclick="startGame()">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div class="stats">
+                <span>Question: <span id="q-count">1</span>/100</span>
+                <span>Level: <span id="level-badge" class="badge"></span></span>
+                <span>Score: <span id="score">0</span></span>
+            </div>
+            <div class="question-box" id="question"></div>
+            <div class="options-grid" id="options-container"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div id="user-form-screen" class="hidden">
+            <h3>Congratulations, you have completed the quiz.</h3>
+            <p style="text-align: center; font-size: 14px; color: #cbd5e1;">Enter your correct information to receive the certificate:</p>
+            <form id="info-form" onsubmit="generateCertificate(event)">
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" id="u-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Class:</label>
+                    <input type="text" id="u-class" required placeholder="e.g.: Seventh">
+                </div>
+                <div class="form-group">
+                    <label>Section:
+                        <select id="u-section" required>
+                         <option value="A">A</option>
+                         <option value="B">B</option>
+                         <option value="C">C</option>
+                      </select>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Roll:</label>
+                    <input type="number" id="u-roll" required placeholder="Your roll number">
+                </div>
+                <div class="form-group">
+                    <label>School Name:</label>
+                    <input type="text" value="Mirpur Siddhanta High School" readonly>
+                </div>
+                <button type="submit" class="btn">Generate Certificate</button>
+            </form>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <div id="cert-container">
+                <div class="certificate-box">
+                   <div class="cert-border">
+                    <h2 style="font-family: 'Explora'; font-size: 3em; margin: 10px;">Mirpur Siddhanta High School</h2>
+                    <p style="font-size: 12px; margin: -8px 0 10px; color: #64748b;">Online Quiz Competition by the ICT Club</p>
+                    <h1 style="font-family: 'Bree Serif', serif;">Certificate of Achievement</h1>
+                    <p style="margin: 5px 0;">It is hereby proudly certified that,</p>
+                    <div class="cert-name" id="c-name">Name</div>
+                    <div class="cert-details">
+                        Class: <b id="c-class"></b> | Section: <b id="c-section"></b> | Roll: <b id="c-roll"></b>
+                    </div>
+                    <p style="font-size: 13px; color: #222c3a;">has answered 100 questions on ICT topics.</p>
+                    <div class="cert-score">Obtained Score: <span id="c-score"></span> / 100</div>
+                   </div>
+                </div>
+            </div>
+            <button class="btn no-print" style="margin-top: 8px; color: #94a3b8; border-color: #94a3b8;" onclick="window.print()">Download / Print Certificate</button>
+            <button class="btn no-print" style="margin-top: 8px;" onclick="location.reload()">Play Again</button>
+        </div>
+    </div>
+
+    <!-- connection to javascript -->
+    <script src="Scripts\main.js"></script>
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts\quiz.js"></script>
+    <script src="Scripts/quiz.js"></script>
+</body>
+
+</html>
