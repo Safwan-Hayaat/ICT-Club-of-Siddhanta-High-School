@@ -1,0 +1,148 @@
+:root {
+  --background: #000814;
+  --main-text: #f1fffa;
+}
+@media (min-width: 900px) {
+ .full-form {
+      width: 40vw;
+      top: 22vh;
+ }
+ body {
+      background-size: cover;
+      background-position-y: -10em;
+      background-image: url(pexels-shtefutsa-17568713.jpg);
+ }
+ #ict-club-form {
+      grid-template-areas:
+     "name name"
+     "class roll"
+     "sec sec"
+     "id-num id-num"
+     "phone-num phone-num"
+     "confirm confirm";
+ }
+}
+@media (max-width: 900px) {
+  .full-form {
+      width: auto;
+      padding: 20px;
+      margin-top: 8em;
+      top: 0vh;
+ }
+ body {
+      background-size: cover;
+      background-image: url(pexels-shtefutsa-17568713-mobile.png);
+ }
+ #ict-club-form {
+      grid-template-areas:
+     "name"
+     "class"
+     "roll"
+     "sec"
+     "id-num"
+     "phone-num"
+     "confirm";
+ }
+}
+
+body {
+  font-weight: 300;
+  background-repeat: no-repeat;
+}
+.title {
+  color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
+  text-shadow: 0px 0px 10px var(--background);
+  font-style: normal;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0%;
+  font-weight: 400;
+  font-family: "Bree Serif", serif;
+}
+label {
+    margin-bottom: 3px;
+}
+span {
+    color: #eee;
+    padding-left: 5px;
+}
+.full-form {
+    position: absolute;
+    display: grid;
+    background-color: #03000c67;
+    justify-self: center;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.397);
+    border-left: 1px solid rgba(255, 255, 255, 0.397);
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.228);
+}
+p {
+  text-align: center;
+  color: var(--main-text);
+  font-size: 14px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 10px var(--background);
+  transition: 200ms;
+}
+p:hover {
+  color: white;
+}
+#ict-club-form {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+}
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: transparent;
+  color: #ffffff;
+}
+::placeholder {
+  color: #bbb;
+  font-size: 12px;
+}
+input:focus {
+  background-color: #00000085;
+}
+option {
+    color: #222;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--main-text);
+  color: var(--background);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#ict-club-form {
+  grid-template-columns: 1fr 1fr; 
+}
+button:hover {
+  background-color: var(--background);
+  color: var(--main-text);
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#status-msg {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+}

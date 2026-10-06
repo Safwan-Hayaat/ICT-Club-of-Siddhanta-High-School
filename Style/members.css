@@ -1,0 +1,146 @@
+* {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+:root {
+  --head-2: 30px;
+  --background: #000814;
+  --main-text: #f1fffa;
+}
+@media (min-width: 900px) {
+  .sub-heading-main {
+    display: grid;
+    margin-left: 20vw;
+    width: 60vw;
+    font-size: 30px;
+  }
+  .sub-bangla {
+    font-size: 50px;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  table {
+    width: 60vw;
+  }
+  td {
+    font-size: 30px;
+    padding: 15px 20px;
+  }
+  th {
+    font-size: 32px;
+    padding: 10px 40px;
+  }
+  .section {
+    font-size: 75px;
+  }
+  .class-no {
+    font-size: 80px;
+  }
+  .same-line {
+    gap: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  .sub-heading-main {
+    margin: 0px;
+    width: 100vw;
+    font-size: 15px;
+  }
+  .sub-bangla {
+    font-size: 24px;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .title-bangla {
+    font-size: 4rem;
+  }
+  table {
+    width: 100vw;
+  }
+  td {
+    font-size: 18px;
+    padding: 10px 5px;
+  }
+  th {
+    font-size: 22px;
+    padding: 10px 5px;
+  }
+  .section {
+    font-size: 55px;
+    margin-top: 0px;
+  }
+  .class-no {
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
+  .same-line {
+    gap: 1em;
+  }
+}
+.title {
+  color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 15rem;
+  font-weight: 400;
+  font-family: "Bree Serif", serif;
+}
+.same-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.title-bangla {
+  font-family: "Sapa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sub-heading-main {
+  color: oklch(from var(--background) calc(l + 0.5) calc(c + 0.01) h);
+}
+.text-bangla,
+td {
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 3rem;
+}
+.class-no {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20vh;
+}
+.section {
+  font-weight: 300;
+  text-align: center;
+}
+td {
+  font-weight: 300;
+}
+table {
+  background-image: linear-gradient(to top, #96e6a1, #a7fc79);
+}
+table,
+td {
+  justify-self: center;
+  border: 2px solid var(--background);
+  border-collapse: collapse;
+  text-align: center;
+  color: var(--background);
+}
+th {
+  border-bottom: 4px solid var(--background);
+  background-color: oklch(from var(--main-text) calc(l + 5) calc(c + 0.05) h);
+}
+.committee-member {
+  font-weight: 400;
+}
