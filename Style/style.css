@@ -627,6 +627,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   background-image: url(dot-effect.webp);
+  background-size: 70px;
   background-color: hsl(from var(--background) calc(h + 10) calc(s - 40) calc(l + 2));
   backdrop-filter: opacity(20%);
 }
