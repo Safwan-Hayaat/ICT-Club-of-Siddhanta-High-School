@@ -628,7 +628,6 @@ header {
   align-items: center;
   background-image: url(dot-effect.webp);
   background-color: hsl(from var(--background) calc(h + 10) calc(s - 40) calc(l + 2));
-  background-size: 100px;
   backdrop-filter: opacity(20%);
 }
 @keyframes glow-sl {
@@ -671,7 +670,6 @@ header {
 #blogs {
   background-color: var(--background);
 }
-
 .welcome {
   font-family: 'explora', serif;
   font-size: 8em;
@@ -805,6 +803,7 @@ header {
 #blogs {
   color: var(--main-text);
   padding-top: 10vh;
+  margin: 10px 0px;
 }
 
 .blogs {
