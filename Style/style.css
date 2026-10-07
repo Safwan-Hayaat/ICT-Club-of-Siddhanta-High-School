@@ -632,13 +632,13 @@ header {
 }
 @keyframes glow-sl {
   0% {
-  text-shadow: 0px 0px 40px #cbbdff, -4px -3px 42px #0040ff;
+  text-shadow: 0px 0px 20px #cbbdff, -4px -3px 21px #0040ff;
   }
   50% {
-  text-shadow: 0px 0px 82px #cbbdff, -4px -3px 84px #0040ff;
+  text-shadow: 0px 0px 41px #cbbdff, -4px -3px 42px #0040ff;
   }
   100% {
-  text-shadow: 0px 0px 40px #cbbdff, -4px -3px 42px #0040ff;
+  text-shadow: 0px 0px 20px #cbbdff, -4px -3px 21px #0040ff;
   }
 }
 .button {
